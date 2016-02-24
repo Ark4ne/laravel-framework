@@ -4,6 +4,15 @@ namespace Illuminate\Support\Facades;
 
 /**
  * @see \Illuminate\Cookie\CookieJar
+ * @method static \Symfony\Component\HttpFoundation\Cookie make($name, $value, $minutes = 0, $path = null, $domain = null, $secure = false, $httpOnly = true)
+ * @method static \Symfony\Component\HttpFoundation\Cookie forever($name, $value, $path = null, $domain = null, $secure = false, $httpOnly = true)
+ * @method static \Symfony\Component\HttpFoundation\Cookie forget($name, $path = null, $domain = null)
+ * @method static bool hasQueued($key)
+ * @method static \Symfony\Component\HttpFoundation\Cookie queued($key, $default = null)
+ * @method static void queue()
+ * @method static void unqueue($name)
+ * @method static setDefaultPathAndDomain($path, $domain, $secure = false)
+ * @method static array getQueuedCookies()
  */
 class Cookie extends Facade
 {

@@ -4,6 +4,19 @@ namespace Illuminate\Support\Facades;
 
 /**
  * @see \Illuminate\Database\Schema\Builder
+ * @method static bool hasTable($table)
+ * @method static bool hasColumn($table, $column)
+ * @method static bool hasColumns($table, array $columns)
+ * @method static string getColumnType($table, $column)
+ * @method static array getColumnListing($table)
+ * @method static \Illuminate\Database\Schema\Blueprint table($table, \Closure $callback)
+ * @method static \Illuminate\Database\Schema\Blueprint create($table, \Closure $callback)
+ * @method static \Illuminate\Database\Schema\Blueprint drop($table)
+ * @method static \Illuminate\Database\Schema\Blueprint dropIfExists($table)
+ * @method static \Illuminate\Database\Schema\Blueprint rename($from, $to)
+ * @method static \Illuminate\Database\Connection getConnection()
+ * @method static setConnection(\Illuminate\Database\Connection $connection)
+ * @method static void blueprintResolver(\Closure $resolver)
  */
 class Schema extends Facade
 {
