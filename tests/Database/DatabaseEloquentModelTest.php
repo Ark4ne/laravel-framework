@@ -337,7 +337,7 @@ class DatabaseEloquentModelTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('2015-04-17 00:00:00', $model->fromDateTime($value));
 
         $value = '1429311541';
-        $this->assertEquals('2015-04-17 22:59:01', $model->fromDateTime($value));
+        $this->assertEquals(date('Y-m-d H:i:s', $value), $model->fromDateTime($value));
     }
 
     public function testInsertProcess()
@@ -1205,7 +1205,7 @@ class DatabaseEloquentModelTest extends PHPUnit_Framework_TestCase
         $this->assertInstanceOf('Carbon\Carbon', $model->datetimeAttribute);
         $this->assertEquals('1969-07-20', $model->dateAttribute->toDateString());
         $this->assertEquals('1969-07-20 22:56:00', $model->datetimeAttribute->toDateTimeString());
-        $this->assertEquals(-14173440, $model->timestampAttribute);
+        $this->assertEquals(strtotime('1969-07-20 22:56:00'), $model->timestampAttribute);
 
         $arr = $model->toArray();
         $this->assertInternalType('int', $arr['intAttribute']);
@@ -1223,7 +1223,7 @@ class DatabaseEloquentModelTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(['foo' => 'bar'], $arr['jsonAttribute']);
         $this->assertEquals('1969-07-20 00:00:00', $arr['dateAttribute']);
         $this->assertEquals('1969-07-20 22:56:00', $arr['datetimeAttribute']);
-        $this->assertEquals(-14173440, $arr['timestampAttribute']);
+        $this->assertEquals(strtotime('1969-07-20 22:56:00'), $arr['timestampAttribute']);
     }
 
     public function testModelAttributeCastingPreservesNull()

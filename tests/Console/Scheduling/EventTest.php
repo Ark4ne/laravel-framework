@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Console\Scheduling\Event;
+use \Symfony\Component\Process\ProcessUtils;
 
 class EventTest extends PHPUnit_Framework_TestCase
 {
@@ -9,7 +10,8 @@ class EventTest extends PHPUnit_Framework_TestCase
         $event = new Event('php -i');
 
         $defaultOutput = (DIRECTORY_SEPARATOR == '\\') ? 'NUL' : '/dev/null';
-        $this->assertSame("php -i > '{$defaultOutput}' 2>&1 &", $event->buildCommand());
+        $defaultOutputEscaped = ProcessUtils::escapeArgument($defaultOutput);
+        $this->assertSame("php -i > {$defaultOutputEscaped} 2>&1 &", $event->buildCommand());
     }
 
     public function testBuildCommandSendOutputTo()
@@ -17,12 +19,14 @@ class EventTest extends PHPUnit_Framework_TestCase
         $event = new Event('php -i');
 
         $event->sendOutputTo('/dev/null');
-        $this->assertSame("php -i > '/dev/null' 2>&1 &", $event->buildCommand());
+        $defaultOutputEscaped = ProcessUtils::escapeArgument('/dev/null');
+        $this->assertSame("php -i > {$defaultOutputEscaped} 2>&1 &", $event->buildCommand());
 
         $event = new Event('php -i');
 
         $event->sendOutputTo('/my folder/foo.log');
-        $this->assertSame("php -i > '/my folder/foo.log' 2>&1 &", $event->buildCommand());
+        $defaultOutputEscaped = ProcessUtils::escapeArgument('/my folder/foo.log');
+        $this->assertSame("php -i > {$defaultOutputEscaped} 2>&1 &", $event->buildCommand());
     }
 
     public function testBuildCommandAppendOutput()
@@ -30,7 +34,8 @@ class EventTest extends PHPUnit_Framework_TestCase
         $event = new Event('php -i');
 
         $event->appendOutputTo('/dev/null');
-        $this->assertSame("php -i >> '/dev/null' 2>&1 &", $event->buildCommand());
+        $defaultOutputEscaped = ProcessUtils::escapeArgument('/dev/null');
+        $this->assertSame("php -i >> {$defaultOutputEscaped} 2>&1 &", $event->buildCommand());
     }
 
     /**
