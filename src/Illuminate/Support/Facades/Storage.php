@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Filesystem\FilesystemManager
+ * @see \Illuminate\Filesystem\FilesystemManager 
  * @method static \Illuminate\Contracts\Filesystem\Filesystem drive($name = null)
  * @method static \Illuminate\Contracts\Filesystem\Filesystem disk($name = null)
  * @method static \Illuminate\Contracts\Filesystem\Filesystem cloud()

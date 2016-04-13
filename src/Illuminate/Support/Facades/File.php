@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Filesystem\Filesystem
+ * @see \Illuminate\Filesystem\Filesystem 
  * @method static bool exists($path)
  * @method static string get($path)
  * @method static mixed getRequire($path)

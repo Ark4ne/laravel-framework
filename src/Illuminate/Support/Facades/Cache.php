@@ -3,14 +3,14 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Cache\CacheManager
+ * @see \Illuminate\Cache\CacheManager 
  * @method static mixed store($name = null)
  * @method static mixed driver($driver = null)
  * @method static \Illuminate\Cache\Repository repository(\Illuminate\Contracts\Cache\Store $store)
  * @method static string getDefaultDriver()
  * @method static void setDefaultDriver($name)
  * @method static extend($driver, \Closure $callback)
- * @see \Illuminate\Cache\Repository
+ * @see \Illuminate\Cache\Repository 
  * @method static void setEventDispatcher(\Illuminate\Contracts\Events\Dispatcher $events)
  * @method static bool has($key)
  * @method static mixed get($key, $default = null)

@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\View\Factory
+ * @see \Illuminate\View\Factory 
  * @method static \Illuminate\Contracts\View\View file($path, $data = [], $mergeData = [])
  * @method static \Illuminate\Contracts\View\View make($view, $data = [], $mergeData = [])
  * @method static \Illuminate\Contracts\View\View of($view, $data = [])

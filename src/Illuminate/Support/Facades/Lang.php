@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Translation\Translator
+ * @see \Illuminate\Translation\Translator 
  * @method static bool hasForLocale($key, $locale = null)
  * @method static bool has($key, $locale = null, $fallback = true)
  * @method static string get($key, array $replace = [], $locale = null, $fallback = true)

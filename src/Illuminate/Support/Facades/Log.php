@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Log\Writer
+ * @see \Illuminate\Log\Writer 
  * @method static void emergency($message, array $context = [])
  * @method static void alert($message, array $context = [])
  * @method static void critical($message, array $context = [])

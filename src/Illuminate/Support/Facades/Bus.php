@@ -3,7 +3,10 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Contracts\Bus\Dispatcher
+ * @see \Illuminate\Contracts\Bus\Dispatcher 
+ * @method static mixed dispatch($command)
+ * @method static mixed dispatchNow($command)
+ * @method static pipeThrough(array $pipes)
  */
 class Bus extends Facade
 {

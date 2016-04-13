@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Routing\Router
+ * @see \Illuminate\Routing\Router 
  * @method static \Illuminate\Routing\Route get($uri, $action = null)
  * @method static \Illuminate\Routing\Route post($uri, $action = null)
  * @method static \Illuminate\Routing\Route put($uri, $action = null)

@@ -3,18 +3,18 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Database\DatabaseManager
+ * @see \Illuminate\Database\DatabaseManager 
  * @method static \Illuminate\Database\Connection connection($name = null)
  * @method static void purge($name = null)
  * @method static void disconnect($name = null)
- * @method static \Illuminate\Database\Connection reconnect($name = null)
+ * @method static \Illuminate\Database\Connection|void reconnect($name = null)
  * @method static string getDefaultConnection()
  * @method static void setDefaultConnection($name)
  * @method static array supportedDrivers()
  * @method static array availableDrivers()
  * @method static void extend($name, callable $resolver)
  * @method static array getConnections()
- * @see \Illuminate\Database\Connection
+ * @see \Illuminate\Database\Connection 
  * @method static void useDefaultQueryGrammar()
  * @method static void useDefaultSchemaGrammar()
  * @method static void useDefaultPostProcessor()
@@ -38,8 +38,6 @@ namespace Illuminate\Support\Facades;
  * @method static void rollBack()
  * @method static int transactionLevel()
  * @method static array pretend(\Closure $callback)
- * @method static void disconnect()
- * @method static void reconnect()
  * @method static void logQuery($query, $bindings, $time = null)
  * @method static void listen(\Closure $callback)
  * @method static bool isDoctrineAvailable()

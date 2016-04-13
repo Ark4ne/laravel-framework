@@ -3,7 +3,15 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Contracts\Auth\Access\Gate
+ * @see \Illuminate\Contracts\Auth\Access\Gate 
+ * @method static bool has($ability)
+ * @method static define($ability, $callback)
+ * @method static policy($class, $policy)
+ * @method static before(callable $callback)
+ * @method static bool allows($ability, $arguments = [])
+ * @method static bool denies($ability, $arguments = [])
+ * @method static bool check($ability, $arguments = [])
+ * @method static static forUser($user)
  */
 class Gate extends Facade
 {

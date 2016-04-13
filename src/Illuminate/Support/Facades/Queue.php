@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Queue\QueueManager
+ * @see \Illuminate\Queue\QueueManager 
  * @method static void before($callback)
  * @method static void after($callback)
  * @method static void looping($callback)
@@ -17,7 +17,7 @@ namespace Illuminate\Support\Facades;
  * @method static void setDefaultDriver($name)
  * @method static string getName($connection = null)
  * @method static bool isDownForMaintenance()
- * @see \Illuminate\Queue\Queue
+ * @see \Illuminate\Queue\Queue 
  * @method static mixed pushOn($queue, $job, $data = "")
  * @method static mixed laterOn($queue, $delay, $job, $data = "")
  * @method static mixed bulk($jobs, $data = "", $queue = null)

@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\View\Compilers\BladeCompiler
+ * @see \Illuminate\View\Compilers\BladeCompiler 
  * @method static void compile($path = null)
  * @method static string getPath()
  * @method static void setPath($path)

@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Config\Repository
+ * @see \Illuminate\Config\Repository 
  * @method static bool has($key)
  * @method static mixed get($key, $default = null)
  * @method static void set($key, $value = null)

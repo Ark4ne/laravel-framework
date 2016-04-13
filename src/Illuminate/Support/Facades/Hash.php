@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Hashing\BcryptHasher
+ * @see \Illuminate\Hashing\BcryptHasher 
  * @method static string make($value, array $options = [])
  * @method static bool check($value, $hashedValue, array $options = [])
  * @method static bool needsRehash($hashedValue, array $options = [])

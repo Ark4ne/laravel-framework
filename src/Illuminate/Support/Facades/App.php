@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Foundation\Application
+ * @see \Illuminate\Foundation\Application 
  * @method static string version()
  * @method static void bootstrapWith(array $bootstrappers)
  * @method static void afterLoadingEnvironment(\Closure $callback)
@@ -42,7 +42,7 @@ namespace Illuminate\Support\Facades;
  * @method static void boot()
  * @method static void booting($callback)
  * @method static void booted($callback)
- * @method static handle(\Symfony\Component\HttpFoundation\Request $request, $type = self::MASTER_REQUEST, $catch = true)
+ * @method static handle(\Symfony\Component\HttpFoundation\Request $request, $type = \Illuminate\Foundation\Application::MASTER_REQUEST, $catch = true)
  * @method static bool shouldSkipMiddleware()
  * @method static bool configurationIsCached()
  * @method static string getCachedConfigPath()

@@ -3,14 +3,14 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Session\SessionManager
+ * @see \Illuminate\Session\SessionManager 
  * @method static array getSessionConfig()
  * @method static string getDefaultDriver()
  * @method static void setDefaultDriver($name)
  * @method static mixed driver($driver = null)
  * @method static extend($driver, \Closure $callback)
  * @method static array getDrivers()
- * @see \Illuminate\Session\Store
+ * @see \Illuminate\Session\Store 
  * @method static start()
  * @method static getId()
  * @method static setId($id)

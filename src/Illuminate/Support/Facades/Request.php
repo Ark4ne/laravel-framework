@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Http\Request
+ * @see \Illuminate\Http\Request 
  * @method static instance()
  * @method static string method()
  * @method static string root()

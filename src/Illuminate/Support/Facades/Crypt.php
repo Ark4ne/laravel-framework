@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Encryption\Encrypter
+ * @see \Illuminate\Encryption\Encrypter 
  * @method static string encrypt($value)
  * @method static string decrypt($payload)
  */

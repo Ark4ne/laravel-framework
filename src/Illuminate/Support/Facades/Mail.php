@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Mail\Mailer
+ * @see \Illuminate\Mail\Mailer 
  * @method static void alwaysFrom($address, $name = null)
  * @method static void alwaysTo($address, $name = null)
  * @method static void raw($text, $callback)

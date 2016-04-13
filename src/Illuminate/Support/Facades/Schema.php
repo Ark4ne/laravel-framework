@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Database\Schema\Builder
+ * @see \Illuminate\Database\Schema\Builder 
  * @method static bool hasTable($table)
  * @method static bool hasColumn($table, $column)
  * @method static bool hasColumns($table, array $columns)

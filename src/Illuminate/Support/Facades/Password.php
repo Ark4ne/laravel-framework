@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Auth\Passwords\PasswordBroker
+ * @see \Illuminate\Auth\Passwords\PasswordBroker 
  * @method static string sendResetLink(array $credentials, \Closure $callback = null)
  * @method static int emailResetLink(\Illuminate\Contracts\Auth\CanResetPassword $user, $token, \Closure $callback = null)
  * @method static mixed reset(array $credentials, \Closure $callback)

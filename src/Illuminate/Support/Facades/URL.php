@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Routing\UrlGenerator
+ * @see \Illuminate\Routing\UrlGenerator 
  * @method static string full()
  * @method static string current()
  * @method static string previous()

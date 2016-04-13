@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Events\Dispatcher
+ * @see \Illuminate\Events\Dispatcher 
  * @method static void listen($events, $listener, $priority = 0)
  * @method static bool hasListeners($eventName)
  * @method static void push($event, $payload = [])

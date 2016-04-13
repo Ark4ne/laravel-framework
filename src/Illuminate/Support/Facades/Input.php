@@ -3,7 +3,7 @@
 namespace Illuminate\Support\Facades;
 
 /**
- * @see \Illuminate\Http\Request
+ * @see \Illuminate\Http\Request 
  * @method static instance()
  * @method static string method()
  * @method static string root()
@@ -67,7 +67,7 @@ namespace Illuminate\Support\Facades;
  * @method static void offsetUnset($offset)
  * @method static initialize(array $query = [], array $request = [], array $attributes = [], array $cookies = [], array $files = [], array $server = [], $content = null)
  * @method static overrideGlobals()
- * @method static \Symfony\Component\HttpFoundation\Session\SessionInterface getSession()
+ * @method static SessionInterface getSession()
  * @method static bool hasPreviousSession()
  * @method static bool hasSession()
  * @method static setSession(\Symfony\Component\HttpFoundation\Session\SessionInterface $session)
