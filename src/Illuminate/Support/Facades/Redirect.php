@@ -16,39 +16,6 @@ namespace Illuminate\Support\Facades;
  * @method static \Illuminate\Http\RedirectResponse action($action, $parameters = [], $status = 302, $headers = [])
  * @method static \Illuminate\Routing\UrlGenerator getUrlGenerator()
  * @method static void setSession(\Illuminate\Session\Store $session)
-/", $status = 302, $headers = [], $secure = null)
-
-
-
-
-
-
-
-/", $status = 302, $headers = [], $secure = null)
-
-
-
-
-
-
-
-/", $status = 302, $headers = [], $secure = null)
-
-
-
-
-
-
-
-/", $status = 302, $headers = [], $secure = null)
-
-
-
-
-
-
-
-/", $status = 302, $headers = [], $secure = null)
  */
 class Redirect extends Facade
 {

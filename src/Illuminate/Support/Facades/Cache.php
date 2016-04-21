@@ -19,6 +19,8 @@ namespace Illuminate\Support\Facades;
  * @method static void put($key, $value, $minutes = null)
  * @method static void putMany(array $values, $minutes)
  * @method static bool add($key, $value, $minutes)
+ * @method static int increment($key, $value = 1)
+ * @method static int decrement($key, $value = 1)
  * @method static void forever($key, $value)
  * @method static mixed remember($key, $minutes, \Closure $callback)
  * @method static mixed sear($key, \Closure $callback)

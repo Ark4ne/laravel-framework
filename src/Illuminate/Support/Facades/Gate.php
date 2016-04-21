@@ -11,7 +11,7 @@ namespace Illuminate\Support\Facades;
  * @method static bool allows($ability, $arguments = [])
  * @method static bool denies($ability, $arguments = [])
  * @method static bool check($ability, $arguments = [])
- * @method static static forUser($user)
+ * @method static forUser($user)
  */
 class Gate extends Facade
 {

@@ -5,6 +5,7 @@ namespace Illuminate\Support\Facades;
 /**
  * @see \Illuminate\Validation\Factory 
  * @method static \Illuminate\Validation\Validator make(array $data, array $rules, array $messages = [], array $customAttributes = [])
+ * @method static void validate(array $data, array $rules, array $messages = [], array $customAttributes = [])
  * @method static void extend($rule, $extension, $message = null)
  * @method static void extendImplicit($rule, $extension, $message = null)
  * @method static void replacer($rule, $replacer)

@@ -15,10 +15,6 @@ namespace Illuminate\Support\Facades;
  * @method static \Illuminate\Http\RedirectResponse redirectToAction($action, $parameters = [], $status = 302, $headers = [])
  * @method static \Illuminate\Http\RedirectResponse redirectGuest($path, $status = 302, $headers = [], $secure = null)
  * @method static \Illuminate\Http\RedirectResponse redirectToIntended($default = "\/", $status = 302, $headers = [], $secure = null)
-/", $status = 302, $headers = [], $secure = null)
-/", $status = 302, $headers = [], $secure = null)
-/", $status = 302, $headers = [], $secure = null)
-/", $status = 302, $headers = [], $secure = null)
  */
 class Response extends Facade
 {
